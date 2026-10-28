@@ -66,21 +66,19 @@ We welcome community contributions to help improve OpenELIS Global!
 
 1. For development , you need to install [Java](https://openjdk.org/install/) 21
 
-### For Offline Installation Using the OpenELIS Global2 Installer
+### Install a published release
 
-Download the OpenELIS Global Installer for each Release from the
-[Release Assets](https://github.com/DIGI-UW/OpenELIS-Global-2/releases)
+Use a
+[released default distribution](https://github.com/DIGI-UW/openelis-docker/releases)
+and follow the README at that release tag. Manifest-enabled distributions select
+the exact images tested together by OE2 and generate installation-owned keys at
+first start. Configure private credentials, then use `docker compose pull`,
+`docker compose up -d --no-build`, and `docker compose ps`.
 
-Supported versions, branches, and the versioning policy are described in
-[RELEASES.md](RELEASES.md).
-
-see full
-[installation instructions](https://uwdigi.atlassian.net/wiki/x/EoBIDg#Downloaded-Installer-Offline-Setup)
-for Offline Installation
-
-### For running OpenELIS Global2 in Docker with default Settings out of the Box
-
-see [OpenELIS-Docker setup](https://github.com/DIGI-UW/openelis-docker)
+See [installation guidance](docs/install.md) and [release policy](RELEASES.md).
+Do not use development tags for production. Historical offline packages retain
+their own tagged instructions; they are not an alternative bootstrap for a new
+distribution.
 
 ### For Running OpenELIS Global2 from Source Code
 
